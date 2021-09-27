@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usernames",
+  "info": {
+    "name": "username",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "query": {
+      "type": "richtext"
+    }
+  }
+}
