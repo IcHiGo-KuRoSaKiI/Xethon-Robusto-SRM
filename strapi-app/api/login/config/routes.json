@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/test-1-s",
-      "handler": "test1.find",
+      "path": "/logins",
+      "handler": "login.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/test-1-s/count",
-      "handler": "test1.count",
+      "path": "/logins/count",
+      "handler": "login.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/test-1-s/:id",
-      "handler": "test1.findOne",
+      "path": "/logins/:id",
+      "handler": "login.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/test-1-s",
-      "handler": "test1.create",
+      "path": "/logins",
+      "handler": "login.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/test-1-s/:id",
-      "handler": "test1.update",
+      "path": "/logins/:id",
+      "handler": "login.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/test-1-s/:id",
-      "handler": "test1.delete",
+      "path": "/logins/:id",
+      "handler": "login.delete",
       "config": {
         "policies": []
       }

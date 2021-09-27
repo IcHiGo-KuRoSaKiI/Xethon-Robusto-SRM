@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "queries",
+  "info": {
+    "name": "query",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "queryTitle": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "unique": false
+    },
+    "query": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 10
+    },
+    "username": {
+      "type": "string",
+      "private": false,
+      "unique": true
+    },
+    "Department": {
+      "type": "enumeration",
+      "enum": [
+        "AI",
+        "Big_Data",
+        "Cloud_Computing",
+        "Mathamatics"
+      ],
+      "required": true
+    },
+    "screenshot": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "logins": {
+      "via": "queries",
+      "collection": "login",
+      "dominant": true
+    }
+  }
+}
